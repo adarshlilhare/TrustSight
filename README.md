@@ -6,7 +6,7 @@
 
 ## 🌐 Live Deployment
 
-👉 **[INSERT YOUR VERCEL URL HERE AFTER DEPLOYING]** 👈
+👉 **[https://trust-sight.vercel.app](https://trust-sight.vercel.app)** 👈
 
 📦 **GitHub:** [https://github.com/adarshlilhare/TrustSight](https://github.com/adarshlilhare/TrustSight)
 
