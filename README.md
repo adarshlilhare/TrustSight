@@ -6,7 +6,9 @@
 
 ## 🌐 Live Deployment
 
-👉 **[INSERT YOUR VERCEL URL HERE]** 👈
+👉 **[INSERT YOUR VERCEL URL HERE AFTER DEPLOYING]** 👈
+
+📦 **GitHub:** [https://github.com/adarshlilhare/TrustSight](https://github.com/adarshlilhare/TrustSight)
 
 > The repository contains a deployment-ready landing page (`index.html`) with `vercel.json` for zero-config Vercel hosting. Connect this repo to Vercel and paste the live link above.
 
@@ -75,7 +77,7 @@ TrustSight/
 
 ## 🔧 Installation (Chrome)
 
-1. Clone this repository: `git clone https://github.com/YOUR_USERNAME/TrustSight.git`
+1. Clone this repository: `git clone https://github.com/adarshlilhare/TrustSight.git`
 2. Open Chrome → Navigate to `chrome://extensions/`
 3. Enable **Developer mode** (top right)
 4. Click **Load unpacked** → Select the `TrustSight` folder
