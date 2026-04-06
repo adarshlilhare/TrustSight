@@ -77,7 +77,7 @@ TrustSight/
 
 ## 🔧 Installation (Chrome)
 
-1. Download the extension ZIP and extract it to a folder.
+1. Clone this repository: `git clone https://github.com/adarshlilhare/TrustSight.git`
 2. Open Chrome → Navigate to `chrome://extensions/`
 3. Enable **Developer mode** (top right)
 4. Click **Load unpacked** → Select the `TrustSight` folder
