@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustSight - Website Blocked</title>
+    <link rel="stylesheet" href="block.css">
+</head>
+<body>
+    <div class="block-container">
+        <div class="block-header">
+            <img src="/assets/icons/icon.png" style="width: 32px; height: 32px; border-radius: 4px;" alt="logo" />
+            <span class="block-brand">TrustSight</span>
+        </div>
+
+        <div class="block-card">
+            <div class="block-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                </svg>
+            </div>
+            <h1 class="block-title">Website Blocked</h1>
+            <p class="block-subtitle">Malware or phishing detected</p>
+            <p class="block-reason">TrustSight has blocked this website because it was identified as a malicious or deceptive page. Visiting this site could compromise your personal information.</p>
+            
+            <div class="block-url-box">
+                <span class="block-url-label">Blocked URL</span>
+                <code id="blocked-url">loading...</code>
+            </div>
+
+            <div class="block-threat-info">
+                <div class="threat-row">
+                    <span class="threat-label">Category</span>
+                    <span class="threat-value danger">Phishing / Malware</span>
+                </div>
+                <div class="threat-row">
+                    <span class="threat-label">Risk Level</span>
+                    <span class="threat-value danger">High</span>
+                </div>
+                <div class="threat-row">
+                    <span class="threat-label">Action</span>
+                    <span class="threat-value">Pre-Navigation Block</span>
+                </div>
+            </div>
+
+            <div class="block-actions">
+                <button id="ts-go-back" class="block-btn block-btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Go Back to Safety
+                </button>
+                <button id="ts-proceed" class="block-btn block-btn-ghost">I understand the risk, continue anyway</button>
+            </div>
+        </div>
+
+        <div class="block-footer">Protected by TrustSight Edge AI Engine v1.0</div>
+    </div>
+    <script src="block.js"></script>
+</body>
+</html>

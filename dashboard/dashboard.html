@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustSight — Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="/assets/icons/icon.png" style="width: 28px; height: 28px; border-radius: 4px;" alt="logo" />
+            <span>TrustSight</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a class="nav-item active" data-page="settings">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                Settings
+            </a>
+            <a class="nav-item" data-page="allowlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                Allow list
+            </a>
+            <a class="nav-item" data-page="support">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                Support
+            </a>
+            <a class="nav-item" data-page="about">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                About
+            </a>
+        </nav>
+        <div class="sidebar-footer">v1.0.0</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- SETTINGS PAGE -->
+        <div class="page active" id="page-settings">
+            <h1 class="page-title">Settings</h1>
+            <p class="page-desc">Configure your protection preferences.</p>
+
+            <div class="settings-group">
+                <h3 class="settings-group-title">Protection</h3>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Real-Time Protection</span><span class="settings-desc">Master switch for all protection modules</span></div>
+                    <label class="db-switch"><input type="checkbox" id="set-protection" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Pre-Navigation Blocking</span><span class="settings-desc">Block threats before the page even loads</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Dynamic DOM Monitoring</span><span class="settings-desc">Watch for injected phishing forms in real-time</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">SPA Navigation Tracking</span><span class="settings-desc">Re-scan on single-page app route changes</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h3 class="settings-group-title">Privacy</h3>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Block Third-Party Trackers</span><span class="settings-desc">Prevent tracking cookies and fingerprinting</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Auto-Decline Cookie Popups</span><span class="settings-desc">Automatically reject GDPR cookie consent banners</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">CryptoMiner Blocker</span><span class="settings-desc">Stop hidden cryptocurrency mining scripts</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h3 class="settings-group-title">Notifications</h3>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Threat Alerts</span><span class="settings-desc">Show a banner when threats are detected</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Breach Alerts</span><span class="settings-desc">Notify when visiting breached websites</span></div>
+                    <label class="db-switch"><input type="checkbox" checked><span class="db-slider"></span></label>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h3 class="settings-group-title">Data</h3>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Clear Protection History</span><span class="settings-desc">Remove all logged threat data</span></div>
+                    <button class="settings-btn danger" id="clear-history-btn">Clear All</button>
+                </div>
+                <div class="settings-row">
+                    <div class="settings-info"><span class="settings-name">Reset All Settings</span><span class="settings-desc">Restore all settings to defaults</span></div>
+                    <button class="settings-btn" id="reset-settings-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ALLOW LIST PAGE -->
+        <div class="page" id="page-allowlist">
+            <h1 class="page-title">Allow list</h1>
+            <p class="page-desc">Websites that bypass TrustSight protection.</p>
+
+            <div class="settings-group">
+                <div class="settings-row" style="display:flex; gap:10px;">
+                    <input type="text" id="new-allow-domain" placeholder="example.com" style="flex:1; padding:8px; border-radius:4px; border:1px solid #334155; background:#0b0f19; color:white;">
+                    <button class="settings-btn" id="add-allow-btn">Add to Allow List</button>
+                </div>
+            </div>
+
+            <div class="settings-group" id="allow-list-container" style="min-height: 200px;">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- SUPPORT PAGE (main) -->
+        <div class="page" id="page-support">
+            <!-- Default Support View -->
+            <div id="support-main">
+                <h1 class="page-title">Support</h1>
+                <p class="page-desc">Get help and troubleshooting tools.</p>
+
+                <div class="settings-group">
+                    <h3 class="settings-group-title">Help Resources</h3>
+                    <div class="settings-row" style="cursor: pointer;" id="open-faq">
+                        <div class="settings-info"><span class="settings-name" style="color: #4fc3f7;">TrustSight Support Center</span><span class="settings-desc">Find answers to common questions</span></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#4fc3f7" stroke-width="2" style="width:20px;height:20px;flex-shrink:0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="settings-row" style="cursor: pointer;" id="open-report">
+                        <div class="settings-info"><span class="settings-name" style="color: #4fc3f7;">Report a Missed Threat</span><span class="settings-desc">Notify us about an active scam page</span></div>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#4fc3f7" stroke-width="2" style="width:20px;height:20px;flex-shrink:0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+
+                <div class="settings-group">
+                    <h3 class="settings-group-title">Diagnostic Tools</h3>
+                    <div class="settings-row">
+                        <div class="settings-info"><span class="settings-name">Download Debug Logs</span><span class="settings-desc">Export internal state for troubleshooting</span></div>
+                        <button class="settings-btn" id="dl-logs">Download</button>
+                    </div>
+                    <div class="settings-row">
+                        <div class="settings-info"><span class="settings-name">Clear Local Storage</span><span class="settings-desc">Wipe all Extension Data</span></div>
+                        <button class="settings-btn danger" id="clear-cache-btn">Clear Data</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Sub-Page -->
+            <div id="support-faq" style="display:none;">
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+                    <button class="settings-btn" id="faq-back" style="padding:6px 10px;">← Back</button>
+                    <h1 class="page-title" style="margin:0;">Support Center</h1>
+                </div>
+                <p class="page-desc">Frequently asked questions about TrustSight Browser Guard.</p>
+
+                <div class="settings-group">
+                    <div class="faq-item">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">What does TrustSight do? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">TrustSight is a browser security extension that blocks malware, phishing, scams, ads, and trackers in real-time. It uses an Edge AI engine that runs 100% on your device — your browsing data never leaves your computer.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">How does Pre-Navigation Blocking work? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">When you click a link or type a URL, TrustSight intercepts the request before the page even begins to load. It checks the domain against a local threat database containing 150+ known malicious sites plus pattern-matching for suspicious domains. If a threat is detected, it redirects you to a warning page instead.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">What is the Allow List? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">The Allow List lets you whitelist specific domains that you trust. If TrustSight blocks a site you know is safe, you can either click "Continue Anyway" on the block page (it auto-adds to the Allow List) or manually add it via the Dashboard. Allowed domains bypass the threat scanner.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">How are ads and trackers blocked? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">TrustSight injects a content script into every webpage. It uses CSS selectors to identify common ad containers (Google Ads, ad iframes, popups) and hides them. It also detects tracker scripts from known domains (Google Analytics, Facebook Pixel, etc.) and removes them from the DOM entirely. A MutationObserver continuously watches for new elements loading in.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">What does "Partially Protected" mean? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">If you turn off one or more protection toggles (Malware, Scam, Ads, PUPs) but keep at least one enabled, TrustSight shows "Partially Protected" in amber. If all are off, it shows "Protection is OFF". On system/empty pages (like chrome:// URLs), it shows "Empty page" since extensions cannot scan browser internals.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">Is my browsing data sent anywhere? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">No. TrustSight runs entirely offline. The threat database, AI scanning engine, and all settings are stored locally in chrome.storage.local. Your browsing data, history, and URLs never leave your device.</div>
+                    </div>
+                    <div class="faq-item" style="border-top:1px solid rgba(255,255,255,0.06);">
+                        <div class="faq-q" style="cursor:pointer; padding:14px 0; font-weight:600; color:#4fc3f7; display:flex; justify-content:space-between; align-items:center;">How do I report a missed threat? <span style="color:rgba(255,255,255,0.3); font-size:18px;">+</span></div>
+                        <div class="faq-a" style="display:none; padding:0 0 14px 0; color:rgba(255,255,255,0.6); line-height:1.6; font-size:13px;">Go to Support → Report a Missed Threat. Enter the suspicious URL, select a category, and optionally add a description. Your report will be sent directly to our security team via email for analysis and inclusion in future threat database updates.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report Sub-Page -->
+            <div id="support-report" style="display:none;">
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+                    <button class="settings-btn" id="report-back" style="padding:6px 10px;">← Back</button>
+                    <h1 class="page-title" style="margin:0;">Report a Missed Threat</h1>
+                </div>
+                <p class="page-desc">Help us improve TrustSight by reporting malicious websites we missed.</p>
+
+                <div class="settings-group">
+                    <div style="display:flex; flex-direction:column; gap:14px; padding:4px 0;">
+                        <div>
+                            <label style="font-size:13px; font-weight:600; color:rgba(255,255,255,0.7); margin-bottom:6px; display:block;">Suspicious URL *</label>
+                            <input type="text" id="report-url" placeholder="https://suspicious-site.com" style="width:100%; padding:10px; border-radius:6px; border:1px solid #334155; background:#0b0f19; color:white; font-size:13px;" />
+                        </div>
+                        <div>
+                            <label style="font-size:13px; font-weight:600; color:rgba(255,255,255,0.7); margin-bottom:6px; display:block;">Threat Category</label>
+                            <select id="report-category" style="width:100%; padding:10px; border-radius:6px; border:1px solid #334155; background:#0b0f19; color:white; font-size:13px;">
+                                <option>Phishing</option>
+                                <option>Malware</option>
+                                <option>Scam</option>
+                                <option>Tech Support Scam</option>
+                                <option>Crypto Scam</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="font-size:13px; font-weight:600; color:rgba(255,255,255,0.7); margin-bottom:6px; display:block;">Description (optional)</label>
+                            <textarea id="report-desc" rows="3" placeholder="Describe why you think this site is dangerous..." style="width:100%; padding:10px; border-radius:6px; border:1px solid #334155; background:#0b0f19; color:white; font-size:13px; resize:vertical;"></textarea>
+                        </div>
+                        <button class="settings-btn" id="submit-report" style="align-self:flex-start; padding:10px 24px; font-weight:600;">Submit Report</button>
+                        <div id="report-status" style="font-size:13px; color:#10b981; display:none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div class="page" id="page-about">
+            <h1 class="page-title">About TrustSight</h1>
+            <p class="page-desc">Browser Guard for the modern web.</p>
+
+            <div class="about-card">
+                <div class="about-logo">
+                    <img src="/assets/icons/icon.png" style="width: 48px; height: 48px; border-radius: 8px;" alt="logo" />
+                </div>
+                <h2>TrustSight Browser Guard</h2>
+                <p class="about-version">Version 1.0.0</p>
+                <p class="about-text">TrustSight is a triple-layer browser security suite that blocks malware, phishing, scams, ads, and trackers using an Edge AI engine running entirely on-device. No data ever leaves your computer.</p>
+
+                <div class="about-features">
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Edge AI Phishing & Scam Detection</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Pre-Navigation Threat Blocking</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 150+ Threat Domain Database</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Real-Time Ad & Tracker Blocking</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dynamic DOM MutationObserver</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Allow List & Secure Bypass Engine</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> SPA Route Change Detection</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Extension Vulnerability Scanner</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Partially Protected State Detection</div>
+                    <div class="about-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 100% Offline — Zero Cloud Dependency</div>
+                </div>
+
+                <p class="about-copy">Built for NextGen Hackathon 2026</p>
+                <p style="color:rgba(255,255,255,0.3); font-size:11px; margin-top:8px;">Contact: adarshlilhare5000@gmail.com</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "TrustSight",
+  "version": "1.0",
+  "description": "Block malware, scams, phishing and trackers for safer, cleaner browsing. Powered by Edge AI.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "webNavigation",
+    "management"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "TrustSight — Browser Guard",
+    "default_icon": {
+      "16": "assets/icons/icon.png",
+      "48": "assets/icons/icon.png",
+      "128": "assets/icons/icon.png"
+    }
+  },
+  "options_page": "dashboard/dashboard.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/overlay.css",
+        "content/overlay.html",
+        "block/block.html",
+        "block/block.css",
+        "dashboard/dashboard.html",
+        "dashboard/dashboard.css",
+        "dashboard/dashboard.js",
+        "assets/icons/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon.png",
+    "48": "assets/icons/icon.png",
+    "128": "assets/icons/icon.png"
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TrustSight Settings</title>
+    <link rel="stylesheet" href="../popup/popup.css"> <!-- Reuse some base styles -->
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="options-container">
+        
+        <div class="header" style="margin-bottom: 30px;">
+            <div class="logo-area">
+                <div class="logo-shield"></div>
+                <div class="logo-text" style="font-size: 24px;">TrustSight Console</div>
+            </div>
+            <div class="hackathon-badge">Production Engine</div>
+        </div>
+
+        <div class="card">
+            <h2>Gen AI Intelligence Setup</h2>
+            <p class="desc">Connect TrustSight to Google's Gemini AI for real-time semantic analysis.</p>
+            
+            <div class="input-group">
+                <label for="api-key">Gemini API Key</label>
+                <input type="password" id="api-key" placeholder="AIzaSyA..." autocomplete="off">
+            </div>
+            <p class="help-text">Your API key is securely stored in local storage and is securely used to send live website context to the Gemini LLM for analysis.</p>
+            
+            <div class="button-group">
+                <button id="save-btn" class="ts-btn ts-btn-primary">Connect & Save</button>
+                <span id="save-status" class="status-msg"></span>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="options.js"></script>
+</body>
+</html>
