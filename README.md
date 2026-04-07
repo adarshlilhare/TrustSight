@@ -115,8 +115,8 @@ TrustSight/
 
 ## 👤 Contact
 
-**Developer:** Adarsh Lilhare  
-**Email:** adarshlilhare5000@gmail.com
+**Developer:** Team NextGen Ninjas  
+**Contact:** adarshlilhare5000@gmail.com
 
 ---
 
