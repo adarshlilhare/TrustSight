@@ -113,9 +113,12 @@ TrustSight/
 
 ---
 
-## 👤 Contact
+## 👤 Author & Contributions
 
-**Developer:** Team NextGen Ninjas  
+**Sole Developer:** Adarsh Lilhare  
+
+> **Hackathon Contribution Note:** Although this project was officially submitted under the team name "NextGen Ninjas", **100% of the codebase, UI/UX design, AI integration, and extension architecture was developed solely by me (Adarsh Lilhare)**. The other registered team member did not participate or contribute to this project in any capacity.
+
 **Contact:** adarshlilhare5000@gmail.com
 
 ---
