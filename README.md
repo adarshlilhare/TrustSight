@@ -116,9 +116,6 @@ TrustSight/
 ## 👤 Developer & Contact
 
 **Developer & Technical Architect:** Adarsh Lilhare  
-
-*TrustSight was conceptualized, engineered, and designed entirely as a solo development effort by Adarsh Lilhare under the team registration "NextGen Ninjas" for the NextGen Hackathon 2026. The entire project lifecycle, from ideation to deployment, was executed independently.*
-
 **Contact:** adarshlilhare5000@gmail.com
 
 ---
