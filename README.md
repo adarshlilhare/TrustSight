@@ -113,11 +113,11 @@ TrustSight/
 
 ---
 
-## 👤 Author & Contributions
+## 👤 Developer & Contact
 
-**Sole Developer:** Adarsh Lilhare  
+**Developer & Technical Architect:** Adarsh Lilhare  
 
-> **Hackathon Contribution Note:** Although this project was officially submitted under the team name "NextGen Ninjas", **100% of the codebase, UI/UX design, AI integration, and extension architecture was developed solely by me (Adarsh Lilhare)**. The other registered team member did not participate or contribute to this project in any capacity.
+*Note: TrustSight was conceptualized, engineered, and designed entirely as a solo development effort by Adarsh Lilhare under the team registration "NextGen Ninjas" for the NextGen Hackathon 2026. The entire project lifecycle, from ideation to deployment, was executed independently.*
 
 **Contact:** adarshlilhare5000@gmail.com
 
